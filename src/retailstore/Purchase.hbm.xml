@@ -10,7 +10,7 @@
     <property name="createdAt" type="timestamp">
       <column length="29" name="created_at"/>
     </property>
-    <set fetch="select" inverse="true" lazy="true" name="purchaseItemses" table="purchase_items">
+    <set fetch="select" inverse="true" lazy="true" name="purchaseItems" table="purchase_items">
       <key>
         <column name="purchase_id" not-null="true"/>
       </key>

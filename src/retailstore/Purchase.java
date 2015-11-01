@@ -45,5 +45,3 @@ public class Purchase  implements java.io.Serializable {
         this.purchaseItems = purchaseItems;
     }
 }
-
-

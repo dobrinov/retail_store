@@ -43,7 +43,7 @@ public class PurchaseItem implements java.io.Serializable {
         this.product = product;
     }
 
-    public Purchase getPurchases() {
+    public Purchase getPurchase() {
         return this.purchase;
     }
     

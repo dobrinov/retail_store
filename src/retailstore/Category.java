@@ -9,7 +9,7 @@ public class Category  implements java.io.Serializable {
      private int id;
      private String name;
      private Date createdAt;
-     private Set productses = new HashSet(0);
+     private Set products = new HashSet(0);
 
     public Category() {
     }
@@ -17,11 +17,11 @@ public class Category  implements java.io.Serializable {
     public Category(int id) {
         this.id = id;
     }
-    public Category(int id, String name, Date createdAt, Set productses) {
+    public Category(int id, String name, Date createdAt, Set products) {
        this.id = id;
        this.name = name;
        this.createdAt = createdAt;
-       this.productses = productses;
+       this.products = products;
     }
    
     public int getId() {
@@ -45,11 +45,11 @@ public class Category  implements java.io.Serializable {
     public void setCreatedAt(Date createdAt) {
         this.createdAt = createdAt;
     }
-    public Set getProductses() {
-        return this.productses;
+    public Set getProducts() {
+        return this.products;
     }
     
-    public void setProductses(Set productses) {
-        this.productses = productses;
+    public void setProducts(Set products) {
+        this.products = products;
     }
 }

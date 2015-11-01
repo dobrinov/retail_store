@@ -37,7 +37,7 @@ public class Product  implements java.io.Serializable {
     public void setId(int id) {
         this.id = id;
     }
-    public Category getCategories() {
+    public Category getCategory() {
         return this.category;
     }
     
