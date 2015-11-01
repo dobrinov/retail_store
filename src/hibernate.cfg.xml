@@ -10,9 +10,9 @@
     <property name="hibernate.show_sql">true</property>
     <property name="hibernate.query.factory_class">org.hibernate.hql.internal.classic.ClassicQueryTranslatorFactory</property>
     <mapping resource="retailstore/User.hbm.xml"/>
-    <mapping resource="retailstore/Categories.hbm.xml"/>
-    <mapping resource="retailstore/PurchaseItems.hbm.xml"/>
-    <mapping resource="retailstore/Products.hbm.xml"/>
-    <mapping resource="retailstore/Purchases.hbm.xml"/>
+    <mapping resource="retailstore/Category.hbm.xml"/>
+    <mapping resource="retailstore/PurchaseItem.hbm.xml"/>
+    <mapping resource="retailstore/Product.hbm.xml"/>
+    <mapping resource="retailstore/Purchase.hbm.xml"/>
   </session-factory>
 </hibernate-configuration>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+  <class name="retailstore.PurchaseItem" optimistic-lock="version" schema="public" table="purchase_items">
+    <id name="id" type="int">
+      <column name="id"/>
+      <generator class="assigned"/>
+    </id>
+    <many-to-one class="retailstore.Product" fetch="select" name="products">
+      <column name="product_id" not-null="true"/>
+    </many-to-one>
+    <many-to-one class="retailstore.Purchase" fetch="select" name="purchases">
+      <column name="purchase_id" not-null="true"/>
+    </many-to-one>
+    <property name="quantity" type="int">
+      <column name="quantity" not-null="true"/>
+    </property>
+    <property name="createdAt" type="timestamp">
+      <column length="29" name="created_at"/>
+    </property>
+  </class>
+</hibernate-mapping>

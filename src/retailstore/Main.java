@@ -19,10 +19,6 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import org.hibernate.Session;
 
-/**
- *
- * @author deyan
- */
 public class Main extends Application {
 
     Session session;
