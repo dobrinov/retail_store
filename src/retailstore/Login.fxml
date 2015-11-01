@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="Login" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="retailstore.LoginController">
+    <children>
+        <GridPane vgap="4" layoutX="0.0" layoutY="0.0" prefHeight="200.0" prefWidth="320.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" percentWidth="10"  />
+                <ColumnConstraints hgrow="SOMETIMES" percentWidth="80" halignment="CENTER"  />
+                <ColumnConstraints hgrow="SOMETIMES" percentWidth="10" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints percentHeight="30" vgrow="NEVER" />
+                <RowConstraints prefHeight="30.0" vgrow="NEVER" />
+                <RowConstraints prefHeight="30.0" vgrow="NEVER" />
+                <RowConstraints prefHeight="30.0" vgrow="NEVER" />
+                <RowConstraints percentHeight="30" vgrow="NEVER" />
+            </rowConstraints>
+            <children>
+                <Label alignment="TOP_CENTER" contentDisplay="CENTER" text="Вход в магазин" minWidth="60" maxWidth="1000" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="0" textFill="#999999"  />
+                <TextField fx:id="usernameFld" prefHeight="30" alignment="TOP_CENTER" promptText="&lt;потребител&gt;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <PasswordField fx:id="passwordFld" prefHeight="30" alignment="TOP_CENTER" promptText="&lt;парола&gt;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <Button fx:id="loginBtn" onAction="#processLogin" alignment="TOP_CENTER" contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" prefHeight="30.0" minWidth="60.0"  maxWidth="1000.0"  text="Вход" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            </children>
+        </GridPane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="285.0" prefWidth="498.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="retailstore.MainMenuController">
+    <children>
+        <GridPane hgap="10" layoutX="0.0" layoutY="0.0" minWidth="200" maxWidth="1000" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="NEVER" percentWidth="25.0" />
+                <ColumnConstraints hgrow="NEVER" percentWidth="25.0" />
+                <ColumnConstraints hgrow="NEVER" percentWidth="25.0" />
+                <ColumnConstraints hgrow="NEVER" percentWidth="25.0"  />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints prefHeight="35.0" vgrow="NEVER" />
+                <RowConstraints prefHeight="35.0" vgrow="NEVER" />
+                <RowConstraints prefHeight="35.0" vgrow="NEVER" />
+                <RowConstraints prefHeight="35.0" vgrow="NEVER" />
+                <RowConstraints vgrow="ALWAYS" />
+            </rowConstraints>
+            <children>
+                <Label alignment="TOP_CENTER" contentDisplay="CENTER" textAlignment="CENTER" maxWidth="1000.0" text="Продукт" textFill="#999999"  />
+                <Label alignment="TOP_CENTER" contentDisplay="CENTER" textAlignment="CENTER" maxWidth="1000.0" text="Склад" textFill="#999999" GridPane.columnIndex="1" />
+                <Label alignment="TOP_CENTER" contentDisplay="CENTER" textAlignment="CENTER" maxWidth="1000.0" text="Клиент" textFill="#999999" GridPane.columnIndex="2" />
+                <Label alignment="TOP_CENTER" contentDisplay="CENTER" textAlignment="CENTER" maxWidth="1000.0" text="Статистика" textFill="#999999" GridPane.columnIndex="3" />
+                <Button prefHeight="30.0" minWidth="60.0" maxWidth="1000.0" contentDisplay="CENTER" mnemonicParsing="false" text="Нов продукт" GridPane.rowIndex="1" />
+                <Button prefHeight="30.0" minWidth="60.0" maxWidth="1000.0" contentDisplay="CENTER" mnemonicParsing="false" text="Редактирай продукт" GridPane.rowIndex="2" />
+                <Button prefHeight="30.0" minWidth="60.0" maxWidth="1000.0" contentDisplay="CENTER" mnemonicParsing="false" text="Добави стока" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <Button prefHeight="30.0" minWidth="60.0" maxWidth="1000.0" contentDisplay="CENTER" mnemonicParsing="false" text="Наличности" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <Button prefHeight="30.0" minWidth="60.0" maxWidth="1000.0" contentDisplay="CENTER" mnemonicParsing="false" text="Продажба" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                <Button prefHeight="30.0" minWidth="60.0" maxWidth="1000.0" contentDisplay="CENTER" mnemonicParsing="false" text="Button" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                <Button prefHeight="30.0" minWidth="60.0" maxWidth="1000.0" contentDisplay="CENTER" mnemonicParsing="false" text="Button" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            </children>
+        </GridPane>
+    </children>
+</AnchorPane>

@@ -1,5 +1,5 @@
 package retailstore;
-// Generated Oct 31, 2015 10:17:02 PM by Hibernate Tools 4.3.1
+// Generated Nov 1, 2015 11:23:18 AM by Hibernate Tools 4.3.1
 
 
 import java.util.Date;

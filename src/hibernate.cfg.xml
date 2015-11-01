@@ -9,8 +9,8 @@
     <property name="hibernate.connection.password">qweqwe</property>
     <property name="hibernate.show_sql">true</property>
     <property name="hibernate.query.factory_class">org.hibernate.hql.internal.classic.ClassicQueryTranslatorFactory</property>
+    <mapping resource="retailstore/User.hbm.xml"/>
     <mapping resource="retailstore/Categories.hbm.xml"/>
-    <mapping resource="retailstore/Users.hbm.xml"/>
     <mapping resource="retailstore/PurchaseItems.hbm.xml"/>
     <mapping resource="retailstore/Products.hbm.xml"/>
     <mapping resource="retailstore/Purchases.hbm.xml"/>

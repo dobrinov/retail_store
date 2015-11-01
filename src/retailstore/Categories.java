@@ -1,5 +1,5 @@
 package retailstore;
-// Generated Oct 31, 2015 10:17:02 PM by Hibernate Tools 4.3.1
+// Generated Nov 1, 2015 11:23:18 AM by Hibernate Tools 4.3.1
 
 
 import java.util.Date;
@@ -13,11 +13,9 @@ public class Categories  implements java.io.Serializable {
 
 
      private int id;
-     private Categories categories;
      private String name;
      private Date createdAt;
      private Set productses = new HashSet(0);
-     private Set categorieses = new HashSet(0);
 
     public Categories() {
     }
@@ -26,13 +24,11 @@ public class Categories  implements java.io.Serializable {
     public Categories(int id) {
         this.id = id;
     }
-    public Categories(int id, Categories categories, String name, Date createdAt, Set productses, Set categorieses) {
+    public Categories(int id, String name, Date createdAt, Set productses) {
        this.id = id;
-       this.categories = categories;
        this.name = name;
        this.createdAt = createdAt;
        this.productses = productses;
-       this.categorieses = categorieses;
     }
    
     public int getId() {
@@ -41,13 +37,6 @@ public class Categories  implements java.io.Serializable {
     
     public void setId(int id) {
         this.id = id;
-    }
-    public Categories getCategories() {
-        return this.categories;
-    }
-    
-    public void setCategories(Categories categories) {
-        this.categories = categories;
     }
     public String getName() {
         return this.name;
@@ -70,17 +59,4 @@ public class Categories  implements java.io.Serializable {
     public void setProductses(Set productses) {
         this.productses = productses;
     }
-    public Set getCategorieses() {
-        return this.categorieses;
-    }
-    
-    public void setCategorieses(Set categorieses) {
-        this.categorieses = categorieses;
-    }
-
-
-
-
 }
-
-

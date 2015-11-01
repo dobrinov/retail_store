@@ -1,16 +1,13 @@
 <?xml version="1.0"?>
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
-<!-- Generated Oct 31, 2015 10:17:02 PM by Hibernate Tools 4.3.1 -->
+<!-- Generated Nov 1, 2015 11:23:18 AM by Hibernate Tools 4.3.1 -->
 <hibernate-mapping>
     <class name="retailstore.Categories" table="categories" schema="public" optimistic-lock="version">
         <id name="id" type="int">
             <column name="id" />
             <generator class="assigned" />
         </id>
-        <many-to-one name="categories" class="retailstore.Categories" fetch="select">
-            <column name="category_id" />
-        </many-to-one>
         <property name="name" type="string">
             <column name="name" />
         </property>
@@ -22,12 +19,6 @@
                 <column name="category_id" />
             </key>
             <one-to-many class="retailstore.Products" />
-        </set>
-        <set name="categorieses" table="categories" inverse="true" lazy="true" fetch="select">
-            <key>
-                <column name="category_id" />
-            </key>
-            <one-to-many class="retailstore.Categories" />
         </set>
     </class>
 </hibernate-mapping>
